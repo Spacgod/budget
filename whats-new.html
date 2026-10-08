@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>What's new · Southstar Business</title>
+    <meta name="description" content="New features and fixes in each version of Southstar Business." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-row">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Southstar Business</a>
+        <nav class="site-nav legal-nav" aria-label="Main">
+          <a href="index.html#pricing">Pricing</a>
+          <a href="index.html#contact">Contact</a>
+          <a class="btn btn-small btn-primary" href="index.html#download">Download</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal wrap">
+      <p class="eyebrow">Updates</p>
+      <h1>What&rsquo;s new</h1>
+      <p class="legal-lede">
+        To update, close Southstar Business and run the newest installer from the <a href="index.html#download">download page</a>. Your clients, invoices, lists, settings and license stay exactly where they are.
+      </p>
+
+      <!-- Newest version first. Copy a block like this one for each release. -->
+      <article class="release">
+        <div class="release-head">
+          <h2>Version 0.2.0</h2>
+          <span class="release-date">October 4, 2026</span>
+        </div>
+        <h3>New</h3>
+        <ul>
+          <li><strong>Money in &amp; out reports:</strong> money in vs money out by month, profit or loss each month, running totals, and where your money comes from and goes.</li>
+          <li><strong>Money chart on Home</strong> for the last six months.</li>
+          <li><strong>Make it yours:</strong> three layouts (sidebar, icon rail, top bar), text size, square or rounded corners, and classic or modern headings.</li>
+          <li><strong>Choose your Home page:</strong> show, hide and reorder its sections.</li>
+          <li><strong>Table, Cards and Board views</strong> for every custom list. Drag cards between columns on the board.</li>
+          <li><strong>Savings goals:</strong> set a target on any budget category, see your progress, and get a &ldquo;save this much a month&rdquo; plan with a one-click Budget it button.</li>
+          <li><strong>Help &amp; how-to:</strong> step-by-step guides inside the app with a &ldquo;Take me there&rdquo; button. Press F1 or ? anytime.</li>
+          <li><strong>Easier bank accounts:</strong> big Money in, Money out and Move money buttons, a card for each account with its balance, and Update a balance to match your bank app in one step.</li>
+          <li><strong>One calendar for everything:</strong> tasks, invoices, bills and shifts now show on the dates they&rsquo;re due. Today is highlighted, and you can click any day to add something.</li>
+          <li><strong>Easier invoices and clients:</strong> a Mark paid button on every unpaid invoice, &ldquo;5 days late&rdquo; and &ldquo;In 3 days&rdquo; hints, short dates, no more sideways scrolling, and a + Invoice button on each client.</li>
+          <li><strong>Easier to find your way:</strong> Settings has jump links to each section, every page opens at the top, Escape closes forms, and the sidebar fits more on smaller screens.</li>
+          <li><strong>Friendlier budget:</strong> a plain-English &ldquo;How the budget works&rdquo; guide, and buttons that explain themselves.</li>
+          <li><strong>Easier license keys:</strong> a &ldquo;Paste key&rdquo; button, and keys are found even inside a pasted email.</li>
+        </ul>
+        <h3>Fixed</h3>
+        <ul>
+          <li>Money in &amp; out no longer counts old paid invoices from before you added your bank account as new money. That money is already part of your starting balance.</li>
+          <li>Home no longer shows alerts for tools you&rsquo;ve switched off.</li>
+          <li>Top services group lines like &ldquo;RN shifts, week of Sep 10&rdquo; together instead of listing each date separately.</li>
+        </ul>
+      </article>
+
+      <article class="release">
+        <div class="release-head">
+          <h2>Version 0.1.0</h2>
+          <span class="release-date">October 2026</span>
+        </div>
+        <ul>
+          <li>First release: clients, quotes and invoices, staff scheduling with license checks, custom lists, budget and bank accounts, bills, mileage, taxes and sales reports.</li>
+          <li>30-day free trial and offline license keys.</li>
+        </ul>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-row">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Southstar Business</a>
+        <nav aria-label="Footer">
+          <a href="index.html#pricing">Pricing</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="privacy.html">Privacy &amp; Terms</a>
+        </nav>
+        <p>&copy; <span data-year>2026</span> Southstar Business</p>
+      </div>
+    </footer>
+    <script>
+      document.querySelectorAll("[data-year]").forEach((node) => (node.textContent = String(new Date().getFullYear())));
+    </script>
+  </body>
+</html>

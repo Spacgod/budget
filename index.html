@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Southstar Business: your whole business, on your own computer</title>
+    <meta
+      name="description"
+      content="Clients, invoices, staff schedules, custom lists, budgets and sales reports in one private desktop app. No account, no cloud: your data stays in a file on your computer."
+    />
+    <meta property="og:title" content="Southstar Business" />
+    <meta property="og:description" content="Your whole business, on your own computer. Clients, invoices, scheduling, budgets and reports in one private app." />
+    <meta property="og:type" content="website" />
+    <!-- For link previews, change this to the full address once the site is online, e.g. https://yoursite.com/images/home.webp -->
+    <meta property="og:image" content="images/home.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#1f3329" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Southstar Business",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Windows 10, Windows 11",
+        "description": "Clients, invoices, staff scheduling, custom lists, budgets and sales reports in one private desktop app. No account, no cloud.",
+        "offers": { "@type": "Offer", "price": "20.00", "priceCurrency": "USD" }
+      }
+    </script>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Line icons (same set as the app). Use with <svg class="i"><use href="#i-name" /></svg>. -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2" /><path d="M3 20c0-3.3 2.7-5.6 6-5.6s6 2.3 6 5.6" /><circle cx="17" cy="9" r="2.5" /><path d="M16.2 14.5c2.8.2 4.8 2.2 4.8 5.5" /></symbol>
+        <symbol id="i-document" viewBox="0 0 24 24"><path d="M14 3.5H7.5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V8z" /><path d="M14 3.5V8h4.5M9 12.5h6M9 16h6" /></symbol>
+        <symbol id="i-calendar-check" viewBox="0 0 24 24"><rect x="4" y="5.5" width="16" height="14.5" rx="2" /><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4M9 14.8l2 2 4-4" /></symbol>
+        <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4.5 6h.01M4.5 12h.01M4.5 18h.01" /></symbol>
+        <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3.5 17.5 9 12l4 4 7.5-8" /><path d="M15 8h5.5v5.5" /></symbol>
+        <symbol id="i-wallet" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="14" rx="2.5" /><path d="M3 10h18M16 15h2" /></symbol>
+        <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.3" /><path d="M15.5 15.5 20 20" /></symbol>
+        <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16.5" rx="2" /><rect x="9" y="3" width="6" height="3.2" rx="1" /><path d="M8.5 11h7M8.5 15h4.5" /></symbol>
+        <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" /><path d="M10.2 8.8v6.4l5.2-3.2z" /></symbol>
+        <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2" /><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" /></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" /></symbol>
+        <symbol id="i-paperclip" viewBox="0 0 24 24"><path d="M19.5 11.6l-7.9 7.9a5 5 0 0 1-7.1-7.1l8.4-8.4a3.3 3.3 0 0 1 4.7 4.7L9.3 17a1.7 1.7 0 0 1-2.4-2.4l7.6-7.6" /></symbol>
+        <symbol id="i-stethoscope" viewBox="0 0 24 24"><path d="M6 3v6a4 4 0 0 0 8 0V3" /><path d="M10 13v2.5a5 5 0 0 0 10 0V13" /><circle cx="20" cy="11" r="2" /></symbol>
+        <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.5 6.2a4 4 0 0 0-5.3 5.3L3.5 17.2 6.8 20.5l5.7-5.7a4 4 0 0 0 5.3-5.3l-2.5 2.5-2.6-.7-.7-2.6z" /></symbol>
+        <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M12 3.5l1.7 4.8 4.8 1.7-4.8 1.7L12 16.5l-1.7-4.8L5.5 10l4.8-1.7z" /><path d="M18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z" /></symbol>
+        <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="7" r="2.6" /><circle cx="6" cy="17" r="2.6" /><path d="M8.2 8.4 20 17M8.2 15.6 20 7" /></symbol>
+        <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2" /><path d="M8.5 7V5.2A1.2 1.2 0 0 1 9.7 4h4.6a1.2 1.2 0 0 1 1.2 1.2V7M3 12.5h18" /></symbol>
+        <symbol id="i-store" viewBox="0 0 24 24"><path d="M4.5 4h15L21 9H3z" /><path d="M4.5 9v11h15V9" /><path d="M10 20v-5h4v5" /></symbol>
+        <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="2" /><path d="M9 20.5h6M12 16.5v4" /></symbol>
+        <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14" /></symbol>
+        <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 3.5h8l4 4v13H6z" /><path d="M14 3.5V8h4" /></symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3.5 19 6v5.5c0 4.3-3 7.6-7 9-4-1.4-7-4.7-7-9V6z" /><path d="M9 12l2.2 2.2L15.5 10" /></symbol>
+        <symbol id="i-wifi-off" viewBox="0 0 24 24"><path d="M4 4l16 16M8.5 16.2a5 5 0 0 1 5.6-.8M5.2 12.8a9.5 9.5 0 0 1 4-2.4M14.8 10.4a9.5 9.5 0 0 1 4 2.4M2 9.5A14 14 0 0 1 7 6.6M12.5 5.5A14 14 0 0 1 22 9.5" /><circle cx="12" cy="19.5" r="0.6" /></symbol>
+        <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h13.5M13 6l6 6-6 6" /></symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" /></symbol>
+      </defs>
+    </svg>
+
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap header-row">
+        <a class="brand" href="#top" aria-label="Southstar Business home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          Southstar Business
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <svg class="i"><use href="#i-menu" /></svg>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+          <a href="#tour">Tour</a>
+          <a href="#features">Features</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn-small btn-primary" href="#download" data-download>Download</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============================================================ hero -->
+      <section class="hero" id="top">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><svg class="i"><use href="#i-lock" /></svg> Private by design. No account, no cloud.</p>
+            <h1>Your whole business, <em>on your own computer.</em></h1>
+            <p class="lede">
+              Clients, invoices, staff schedules, custom lists, budgets and sales reports in one calm app. Everything is saved in a file you own, so it works offline and nobody else ever sees it.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#download" data-download>
+                <svg class="i"><use href="#i-download" /></svg>
+                Try it free for 30 days
+              </a>
+              <a class="btn btn-ghost" href="#tour">Take the tour <svg class="i"><use href="#i-arrow-right" /></svg></a>
+            </div>
+            <ul class="hero-points">
+              <li><svg class="i"><use href="#i-check" /></svg><span><strong>$20 once</strong>, no subscription</span></li>
+              <li><svg class="i"><use href="#i-check" /></svg>Works offline</li>
+              <li><svg class="i"><use href="#i-check" /></svg>Windows 10 &amp; 11</li>
+            </ul>
+          </div>
+
+          <!-- App preview (drawn with HTML/CSS, mirrors the real Home screen) -->
+          <div class="app-window" aria-hidden="true">
+            <div class="app-bar"><i></i><i></i><i></i><span>Southstar Business</span></div>
+            <div class="app-body">
+              <aside class="app-side">
+                <div class="side-brand"><span class="brand-mark"></span>Southstar</div>
+                <div class="side-search"><svg class="i"><use href="#i-search" /></svg>Search<kbd>Ctrl K</kbd></div>
+                <span class="side-label">Sales</span>
+                <span class="side-item">Clients</span>
+                <span class="side-item">Invoices</span>
+                <span class="side-label">Work</span>
+                <span class="side-item is-active">Schedule</span>
+                <span class="side-item">Time</span>
+                <span class="side-label">Money</span>
+                <span class="side-item">Budget</span>
+                <span class="side-item">Reports</span>
+                <span class="side-label">Custom lists</span>
+                <span class="side-item"><svg class="i"><use href="#i-users" /></svg>Staff <b>2</b></span>
+              </aside>
+              <div class="app-main">
+                <div class="mock-hero">
+                  <small>Saturday, October 4</small>
+                  <strong>Good morning</strong>
+                  <p>October so far: <b>$3,245</b> in, <b>$620</b> out. You&rsquo;re ahead of last month.</p>
+                </div>
+                <div class="mock-tiles">
+                  <div><small>In the bank</small><b>$16,522</b></div>
+                  <div><small>Clients owe you</small><b>$1,480</b></div>
+                  <div><small>Profit this month</small><b class="pos">$2,625</b></div>
+                </div>
+                <div class="mock-chart">
+                  <small>Sales by month</small>
+                  <div class="bars">
+                    <span style="--h: 18%"></span><span style="--h: 8%"></span><span style="--h: 34%"></span><span style="--h: 10%"></span><span style="--h: 46%"></span><span style="--h: 88%"></span><span style="--h: 38%"></span><span style="--h: 100%"></span><span style="--h: 82%"></span><span style="--h: 26%"></span>
+                  </div>
+                </div>
+                <div class="mock-alert"><span></span>1 shift is booked with someone whose license has run out.<em>Fix schedule</em></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ who it's for -->
+      <section class="who">
+        <div class="wrap">
+          <p class="who-title">Shapes itself to your kind of business</p>
+          <ul class="who-list">
+            <li><svg class="i"><use href="#i-stethoscope" /></svg>Home care &amp; medical staffing</li>
+            <li><svg class="i"><use href="#i-monitor" /></svg>Computer &amp; tech repair</li>
+            <li><svg class="i"><use href="#i-sparkles" /></svg>Cleaning services</li>
+            <li><svg class="i"><use href="#i-wrench" /></svg>Trades &amp; contracting</li>
+            <li><svg class="i"><use href="#i-scissors" /></svg>Salons &amp; wellness</li>
+            <li><svg class="i"><use href="#i-briefcase" /></svg>Consultants &amp; freelancers</li>
+            <li><svg class="i"><use href="#i-store" /></svg>Shops &amp; makers</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============================================================ tour (real screenshots, fictional data) -->
+      <section class="section tour" id="tour">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Take the tour</p>
+            <h2>See it in action.</h2>
+            <p>Real screens from the app, shown with a made-up home care business.</p>
+          </div>
+          <div class="tour-tabs" role="tablist" aria-label="App screens">
+            <button type="button" role="tab" id="tab-home" aria-controls="panel-tour" aria-selected="true" data-shot="home" data-caption="Home tells you how the month is going in one sentence, and lists what needs your attention first.">Home</button>
+            <button type="button" role="tab" id="tab-schedule" aria-controls="panel-tour" aria-selected="false" tabindex="-1" data-shot="schedule" data-caption="The week at a glance: who works where, what you&rsquo;ll charge, what you&rsquo;ll pay, and who isn&rsquo;t cleared to work.">Schedule</button>
+            <button type="button" role="tab" id="tab-money" aria-controls="panel-tour" aria-selected="false" tabindex="-1" data-shot="money" data-caption="Money in vs money out every month, profit or loss, running totals, and where your money goes.">Money</button>
+            <button type="button" role="tab" id="tab-staff" aria-controls="panel-tour" aria-selected="false" tabindex="-1" data-shot="staff" data-caption="Lists you design yourself, as a table, cards or a board. Drag people between columns; expired licenses stand out.">Staff list</button>
+            <button type="button" role="tab" id="tab-invoice" aria-controls="panel-tour" aria-selected="false" tabindex="-1" data-shot="invoice" data-caption="Clean, professional invoices you can save as a PDF or email in one click.">Invoices</button>
+            <button type="button" role="tab" id="tab-reports" aria-controls="panel-tour" aria-selected="false" tabindex="-1" data-shot="reports" data-caption="Sales by month, your top services and best customers, explained in plain English.">Sales</button>
+          </div>
+          <figure class="tour-frame" id="panel-tour" role="tabpanel" aria-labelledby="tab-home">
+            <div class="tour-bar" aria-hidden="true"><i></i><i></i><i></i><span>Southstar Business</span></div>
+            <img src="images/home.webp" width="1440" height="900" alt="The Southstar Business Home screen" decoding="async" data-tour-image />
+            <figcaption data-tour-caption>Home tells you how the month is going in one sentence, and lists what needs your attention first.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ============================================================ features -->
+      <section class="section" id="features">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Everything in one place</p>
+            <h2>Stop juggling spreadsheets, invoice apps and sticky notes.</h2>
+            <p>Southstar Business replaces the pile of tools most small businesses use, and it explains your numbers in plain English instead of accounting jargon.</p>
+          </div>
+          <div class="features">
+            <article class="feature">
+              <span class="feature-icon"><svg class="i"><use href="#i-document" /></svg></span>
+              <h3>Invoices clients take seriously</h3>
+              <p>Your logo, three clean templates, a pay-online link, and one click to save a PDF or email it. Overdue invoices are flagged for you.</p>
+            </article>
+            <article class="feature">
+              <span class="feature-icon"><svg class="i"><use href="#i-users" /></svg></span>
+              <h3>Clients &amp; follow-ups</h3>
+              <p>Contact details, ratings, notes and a full history of every job and payment. Never lose track of who to call back.</p>
+            </article>
+            <article class="feature">
+              <span class="feature-icon"><svg class="i"><use href="#i-calendar-check" /></svg></span>
+              <h3>Staff scheduling</h3>
+              <p>Book people into shifts at clients, catch double-bookings and expired licenses, then bill and run payroll from what was worked.</p>
+            </article>
+            <article class="feature">
+              <span class="feature-icon"><svg class="i"><use href="#i-list" /></svg></span>
+              <h3>Lists you design</h3>
+              <p>Track anything: staff and certifications, job sites, equipment, members. Pick the fields, get reminders before dates expire, attach photos and PDFs.</p>
+            </article>
+            <article class="feature">
+              <span class="feature-icon"><svg class="i"><use href="#i-trend" /></svg></span>
+              <h3>Reports with real charts</h3>
+              <p>Money in vs money out, profit each month, where your money goes, best customers and top services, each with a plain-English takeaway.</p>
+            </article>
+            <article class="feature">
+              <span class="feature-icon"><svg class="i"><use href="#i-wallet" /></svg></span>
+              <h3>Budget &amp; bank accounts</h3>
+              <p>Give every dollar a job, import bank files (CSV, OFX, QIF), and see profit and loss without a bookkeeper.</p>
+            </article>
+            <article class="feature">
+              <span class="feature-icon"><svg class="i"><use href="#i-clipboard" /></svg></span>
+              <h3>Quotes, products &amp; bills</h3>
+              <p>Send quotes that turn into invoices in one click, keep a price list with stock, and pay supplier bills on time.</p>
+            </article>
+            <article class="feature">
+              <span class="feature-icon"><svg class="i"><use href="#i-play" /></svg></span>
+              <h3>Time, mileage &amp; taxes</h3>
+              <p>A timer that bills hours, mileage and receipt photos for tax time, and a running estimate of what to set aside.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ spotlight: scheduling -->
+      <section class="section spotlight" id="schedule">
+        <div class="wrap spot-grid">
+          <div class="spot-copy">
+            <p class="eyebrow">Built for staffing and service teams</p>
+            <h2>A schedule that checks people are cleared to work.</h2>
+            <p>Most scheduling tools let you book anyone. Southstar Business knows each person&rsquo;s license and background-check dates from your Staff list, and warns you before you send someone whose paperwork has run out.</p>
+            <ul class="checks">
+              <li><svg class="i"><use href="#i-check" /></svg>Flags expired licenses and double-bookings, including overnight shifts</li>
+              <li><svg class="i"><use href="#i-check" /></svg>Suggests who&rsquo;s free and cleared, with the right role, in one click</li>
+              <li><svg class="i"><use href="#i-check" /></svg>Turns worked shifts into an invoice per client</li>
+              <li><svg class="i"><use href="#i-check" /></svg>Hours and pay per person, exported for payroll</li>
+            </ul>
+          </div>
+          <div class="mock-card" aria-hidden="true">
+            <div class="mock-card-head"><b>Edit shift</b><span>Sunrise Care Home · Fri Oct 2</span></div>
+            <div class="mock-field"><small>Who</small><span>Tanya Brooks · LPN</span></div>
+            <div class="mock-row">
+              <div class="mock-field"><small>Starts</small><span>7:00 AM</span></div>
+              <div class="mock-field"><small>Ends</small><span>3:00 PM</span></div>
+              <div class="mock-field"><small>Bill rate</small><span>$48/h</span></div>
+            </div>
+            <div class="mock-warning"><b>Not cleared:</b> License expires Sep 27, 2026, before this shift</div>
+            <div class="mock-suggest"><small>Free and cleared for this time:</small><span>Dana Kim</span><span>Maria Lopez</span></div>
+            <div class="mock-summary"><b>7.50 h</b><span>Charge $360</span><span>Pay $240</span><span>Margin $120</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ spotlight: reports -->
+      <section class="section" id="reports">
+        <div class="wrap spot-grid reverse">
+          <div class="spot-copy">
+            <p class="eyebrow">Know your numbers</p>
+            <h2>Reports that tell you what to do next.</h2>
+            <p>See what comes in, what goes out and what&rsquo;s left, month by month. No bank connection needed: the charts work straight from your paid invoices and bills, and get even better when you add a bank account.</p>
+            <ul class="checks">
+              <li><svg class="i"><use href="#i-check" /></svg>Money in vs money out, and profit or loss, every month</li>
+              <li><svg class="i"><use href="#i-check" /></svg>Where your money comes from and where it goes</li>
+              <li><svg class="i"><use href="#i-check" /></svg>Best months, top services and new vs returning customers</li>
+              <li><svg class="i"><use href="#i-check" /></svg>A warning when one customer is too big a share of income</li>
+              <li><svg class="i"><use href="#i-check" /></svg>Profit &amp; loss and invoice exports for your accountant</li>
+            </ul>
+          </div>
+          <div class="mock-card" aria-hidden="true">
+            <div class="mock-card-head"><b>Sales by month</b><span class="legend"><i></i>Paid <i class="soft"></i>Not paid yet</span></div>
+            <div class="report-bars">
+              <div><span style="--h: 16%"></span><small>Jan</small></div>
+              <div><span style="--h: 7%"></span><small>Feb</small></div>
+              <div><span style="--h: 31%"></span><small>Mar</small></div>
+              <div><span style="--h: 9%"></span><small>Apr</small></div>
+              <div><span style="--h: 44%"></span><small>May</small></div>
+              <div><span style="--h: 89%"></span><small>Jun</small></div>
+              <div><span style="--h: 36%"></span><small>Jul</small></div>
+              <div><span style="--h: 100%"></span><small>Aug</small></div>
+              <div><span style="--h: 70%"></span><em style="--h: 13%"></em><small>Sep</small></div>
+              <div><span style="--h: 18%"></span><em style="--h: 10%"></em><small>Oct</small></div>
+              <i class="avg" style="--h: 41%"><b>Avg $325/mo</b></i>
+            </div>
+            <p class="mock-insight">Your best month was <b>August</b>. Most requested: <b>house calls</b>, about $50 each.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ spotlight: customization -->
+      <section class="section spotlight" id="customize">
+        <div class="wrap spot-grid">
+          <div class="spot-copy">
+            <p class="eyebrow">Make it yours</p>
+            <h2>Arrange it the way you work.</h2>
+            <p>Pick a layout, a theme and an accent color, choose what shows on your Home page, and view each list as a table, cards or a board. It takes a minute, and it&rsquo;s easy to put back.</p>
+            <ul class="checks">
+              <li><svg class="i"><use href="#i-check" /></svg>Three layouts: sidebar, slim icon rail, or a menu across the top</li>
+              <li><svg class="i"><use href="#i-check" /></svg>Seven themes, light and dark, plus your own accent color</li>
+              <li><svg class="i"><use href="#i-check" /></svg>Bigger text, square or rounded corners, classic or modern headings</li>
+              <li><svg class="i"><use href="#i-check" /></svg>Choose and reorder the sections on your Home page</li>
+            </ul>
+          </div>
+          <figure class="shot-frame" aria-hidden="true">
+            <div class="tour-bar"><i></i><i></i><i></i><span>Settings · Layout &amp; style</span></div>
+            <img src="images/customize.webp" width="1440" height="900" alt="" loading="lazy" decoding="async" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ============================================================ privacy -->
+      <section class="section privacy" id="privacy">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow light">Your data, your computer</p>
+            <h2>Private by design, not by promise.</h2>
+            <p>There&rsquo;s no account to create and no server holding your clients&rsquo; details. Southstar Business saves everything to a plain file in your Documents folder.</p>
+          </div>
+          <div class="privacy-grid">
+            <div class="privacy-item">
+              <svg class="i"><use href="#i-lock" /></svg>
+              <h3>No account, no cloud</h3>
+              <p>Nothing is uploaded anywhere. Client names, phone numbers and staff records never leave your computer.</p>
+            </div>
+            <div class="privacy-item">
+              <svg class="i"><use href="#i-wifi-off" /></svg>
+              <h3>Works offline</h3>
+              <p>No internet? No problem. Send invoices and check the schedule from a house call with no signal.</p>
+            </div>
+            <div class="privacy-item">
+              <svg class="i"><use href="#i-shield" /></svg>
+              <h3>Daily backups, automatically</h3>
+              <p>A backup is kept every day for a month, and a damaged file is never overwritten.</p>
+            </div>
+            <div class="privacy-item">
+              <svg class="i"><use href="#i-file" /></svg>
+              <h3>A file you own</h3>
+              <p>Export a full backup any time, move it to a new computer, or keep a copy on a USB drive.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ comparison -->
+      <section class="section" id="compare">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">How it&rsquo;s different</p>
+            <h2>One app instead of five.</h2>
+          </div>
+          <div class="compare-wrap">
+            <table class="compare">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col" class="us">Southstar Business</th>
+                  <th scope="col">Typical cloud invoicing</th>
+                  <th scope="col">Spreadsheets</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Clients, invoices, schedule, budget and reports together</th>
+                  <td class="us"><svg class="i yes"><use href="#i-check" /></svg></td>
+                  <td>Usually several separate apps</td>
+                  <td>Build it yourself</td>
+                </tr>
+                <tr>
+                  <th scope="row">Your data stays on your computer</th>
+                  <td class="us"><svg class="i yes"><use href="#i-check" /></svg></td>
+                  <td>Stored on their servers</td>
+                  <td><svg class="i yes"><use href="#i-check" /></svg></td>
+                </tr>
+                <tr>
+                  <th scope="row">Works with no internet</th>
+                  <td class="us"><svg class="i yes"><use href="#i-check" /></svg></td>
+                  <td>Needs a connection</td>
+                  <td><svg class="i yes"><use href="#i-check" /></svg></td>
+                </tr>
+                <tr>
+                  <th scope="row">Checks staff licenses when you schedule</th>
+                  <td class="us"><svg class="i yes"><use href="#i-check" /></svg></td>
+                  <td>Rarely</td>
+                  <td>Only by hand</td>
+                </tr>
+                <tr>
+                  <th scope="row">Lists shaped to your business</th>
+                  <td class="us"><svg class="i yes"><use href="#i-check" /></svg></td>
+                  <td>Fixed fields</td>
+                  <td><svg class="i yes"><use href="#i-check" /></svg></td>
+                </tr>
+                <tr>
+                  <th scope="row">Charts that explain themselves</th>
+                  <td class="us"><svg class="i yes"><use href="#i-check" /></svg></td>
+                  <td>Varies</td>
+                  <td>Build it yourself</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ how it works -->
+      <section class="section steps-section">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Up and running in minutes</p>
+            <h2>Three steps to a tidier business.</h2>
+          </div>
+          <ol class="steps">
+            <li>
+              <span>1</span>
+              <h3>Install</h3>
+              <p>Download the installer and open it. No sign-up, no credit card, no email address.</p>
+            </li>
+            <li>
+              <span>2</span>
+              <h3>Pick your business type</h3>
+              <p>Choose home care, cleaning, repair, trades and more. The app suggests the lists and tools that fit, and hides what you don&rsquo;t need.</p>
+            </li>
+            <li>
+              <span>3</span>
+              <h3>Bring your records</h3>
+              <p>Import a spreadsheet saved as CSV into any list, or a bank file into your accounts, and you&rsquo;re done.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============================================================ pricing -->
+      <section class="section pricing-section" id="pricing">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Pricing</p>
+            <h2>Pay once. Own it.</h2>
+            <p>Try everything free for 30 days. When you&rsquo;re ready, one $20 license unlocks it all, paid with Cash App or Venmo. No subscription, and the app keeps working forever.</p>
+          </div>
+
+          <article class="plan plan-single">
+            <div class="plan-top">
+              <div>
+                <h3>Southstar Business</h3>
+                <p class="plan-for">Everything included, for any kind of business.</p>
+              </div>
+              <p class="plan-price"><span data-price></span><small>one time</small></p>
+            </div>
+            <ul class="checks plan-features">
+              <li><svg class="i"><use href="#i-check" /></svg>Clients, quotes and professional invoices</li>
+              <li><svg class="i"><use href="#i-check" /></svg>Staff schedule with license and double-booking checks</li>
+              <li><svg class="i"><use href="#i-check" /></svg>Custom lists with reminders and attachments</li>
+              <li><svg class="i"><use href="#i-check" /></svg>Bill clients and run payroll from worked shifts</li>
+              <li><svg class="i"><use href="#i-check" /></svg>Budget, bank import, bills and taxes</li>
+              <li><svg class="i"><use href="#i-check" /></svg>Sales reports and charts</li>
+              <li><svg class="i"><use href="#i-check" /></svg>As many businesses as you like</li>
+              <li><svg class="i"><use href="#i-check" /></svg>1 year of free updates</li>
+            </ul>
+          </article>
+
+          <ol class="buy-steps">
+            <li><span>1</span><div><strong>Pay with Cash App or Venmo</strong> using the buttons below. Put <em>your email address</em> in the payment note so we know where to send your key.</div></li>
+            <li><span>2</span><div><strong>Get your key by email,</strong> usually within a day. It starts with <code>SSB1-</code>.</div></li>
+            <li><span>3</span><div><strong>Paste it into the app</strong> (click the license badge in the sidebar). Your trial data stays exactly as it is.</div></li>
+          </ol>
+
+          <div class="pay-bar" data-pay-buttons></div>
+
+          <!-- Forgot the email in the payment note? Sends to Formspree, which forwards it to the owner. -->
+          <form class="claim-form" id="claim-form" action="https://formspree.io/f/xljgrvpw" method="POST" novalidate data-ajax-form data-success="Thanks! We&rsquo;ll match your payment and email your license key, usually within a day.">
+            <div class="claim-head">
+              <h3>Forgot to add your email?</h3>
+              <p>No problem. Tell us how you paid and where to send your key.</p>
+            </div>
+
+            <div class="claim-grid">
+              <label class="claim-field">
+                <span>Your email</span>
+                <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required data-required-msg="Enter the email address where we should send your key." />
+                <small class="claim-error" data-error-for="email"></small>
+              </label>
+
+              <fieldset class="claim-field claim-method">
+                <legend>How did you pay?</legend>
+                <div class="claim-options">
+                  <label><input type="radio" name="paid_with" value="Cash App" required data-required-msg="Choose Cash App or Venmo." /> Cash App</label>
+                  <label><input type="radio" name="paid_with" value="Venmo" /> Venmo</label>
+                </div>
+                <small class="claim-error" data-error-for="paid_with"></small>
+              </fieldset>
+
+              <label class="claim-field">
+                <span>Name or $Cashtag / @username you paid from</span>
+                <input type="text" name="paid_from" autocomplete="name" placeholder="e.g. Jane Smith or $janesmith" required data-required-msg="Tell us the name or handle the payment came from." />
+                <small class="claim-error" data-error-for="paid_from"></small>
+              </label>
+
+              <label class="claim-field">
+                <span>When did you pay? <em>(optional)</em></span>
+                <input type="text" name="paid_when" placeholder="e.g. today around 3pm" />
+              </label>
+
+              <label class="claim-field claim-wide">
+                <span>Anything else? <em>(optional)</em></span>
+                <textarea name="message" rows="3" placeholder="Business name for the license, questions, etc."></textarea>
+              </label>
+            </div>
+
+            <!-- Spam trap: people never see or fill this in. -->
+            <input type="text" name="_gotcha" class="claim-trap" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <input type="hidden" name="_subject" value="Southstar Business license: payment without email" />
+
+            <div class="claim-actions">
+              <button type="submit" class="btn btn-primary">Send my details</button>
+              <p class="claim-status" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- ============================================================ FAQ -->
+      <section class="section" id="faq">
+        <div class="wrap faq-wrap">
+          <div class="section-head left">
+            <p class="eyebrow">Questions</p>
+            <h2>Good to know</h2>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>Where is my information stored?</summary>
+              <p>In a file called <code>workspace.json</code> in <code>Documents\Southstar Business</code>, with a daily backup in the <code>backups</code> folder next to it. Nothing is sent to us or anyone else.</p>
+            </details>
+            <details>
+              <summary>Do I need the internet?</summary>
+              <p>No. The app runs entirely on your computer. You only need a connection to email an invoice or open a payment link.</p>
+            </details>
+            <details>
+              <summary>Can I run more than one business?</summary>
+              <p>Yes. Add as many businesses as you like and switch between them from the top of the sidebar. Each keeps its own clients, invoices, lists and settings.</p>
+            </details>
+            <details>
+              <summary>Can I move my spreadsheet into it?</summary>
+              <p>Yes. Save your sheet as CSV and import it into any custom list; columns are matched to fields by name. Bank statements import as CSV, OFX or QIF.</p>
+            </details>
+            <details>
+              <summary>Is it safe for staff and client records?</summary>
+              <p>Your records stay on your own computer and are never uploaded. Keep your computer password-protected, and leave detailed health information out of notes.</p>
+            </details>
+            <details>
+              <summary>How do I get a license key?</summary>
+              <p>Pay $20 with Cash App or Venmo (see <a href="#pricing">Pricing</a>) and put your email address in the payment note. Your key arrives by email. Paste it into the app by clicking the license badge in the sidebar.</p>
+            </details>
+            <details>
+              <summary>What happens when the free trial ends?</summary>
+              <p>Nothing is deleted. The app becomes read-only: you can still open, search, print and export everything. Enter a license key to keep adding and changing things.</p>
+            </details>
+            <details>
+              <summary>Does it work on a Mac?</summary>
+              <p>Southstar Business is available for Windows 10 and 11 today.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ contact -->
+      <section class="section contact-section" id="contact">
+        <div class="wrap contact-wrap">
+          <div class="section-head left">
+            <p class="eyebrow">Contact</p>
+            <h2>Questions? Say hello.</h2>
+            <p>Ask about the app, get help with your license key, or tell us what would make it better. We read every message and usually reply within a day.</p>
+          </div>
+
+          <form class="claim-form contact-form" id="contact-form" action="https://formspree.io/f/xrpezdog" method="POST" novalidate data-ajax-form data-success="Thanks! Your message is on its way. We&rsquo;ll reply to your email soon.">
+            <div class="claim-grid">
+              <label class="claim-field">
+                <span>Your name</span>
+                <input type="text" name="name" autocomplete="name" placeholder="Jane Smith" required data-required-msg="Tell us your name." />
+                <small class="claim-error" data-error-for="name"></small>
+              </label>
+
+              <label class="claim-field">
+                <span>Your email</span>
+                <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required data-required-msg="Enter your email so we can reply." />
+                <small class="claim-error" data-error-for="email"></small>
+              </label>
+
+              <label class="claim-field claim-wide">
+                <span>What&rsquo;s it about?</span>
+                <select name="topic">
+                  <option>A question about the app</option>
+                  <option>Help using the app</option>
+                  <option>My license key</option>
+                  <option>An idea or feedback</option>
+                  <option>Something else</option>
+                </select>
+              </label>
+
+              <label class="claim-field claim-wide">
+                <span>Message</span>
+                <textarea name="message" rows="5" placeholder="How can we help?" required data-required-msg="Write a message."></textarea>
+                <small class="claim-error" data-error-for="message"></small>
+              </label>
+            </div>
+
+            <input type="text" name="_gotcha" class="claim-trap" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <input type="hidden" name="_subject" value="Southstar Business: new message from the website" />
+
+            <div class="claim-actions">
+              <button type="submit" class="btn btn-primary">Send message</button>
+              <p class="claim-status" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- ============================================================ download -->
+      <section class="cta" id="download">
+        <div class="wrap cta-inner">
+          <h2>Bring your whole business home.</h2>
+          <p>Download Southstar Business for Windows and try everything free for 30 days. No card, no account.</p>
+          <a class="btn btn-gold" href="#download" data-download>
+            <svg class="i"><use href="#i-download" /></svg>
+            Download for Windows
+          </a>
+          <p class="fine">Version <span data-version>0.2.0</span> · Windows 10 and 11 · About 150 MB · <a href="whats-new.html">What&rsquo;s new</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-row">
+        <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span>Southstar Business</a>
+        <nav aria-label="Footer">
+          <a href="#features">Features</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+          <a href="whats-new.html">What&rsquo;s new</a>
+          <a href="privacy.html">Privacy &amp; Terms</a>
+          <a href="#download" data-download>Download</a>
+        </nav>
+        <p>&copy; <span data-year>2026</span> Southstar Business</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

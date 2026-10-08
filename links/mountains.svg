@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMax slice">
+  <!-- Mountains at dusk, flat layers from far (hazy) to near (dark), with the Southern Cross overhead. -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c1714" />
+      <stop offset="0.45" stop-color="#1b2f27" />
+      <stop offset="0.66" stop-color="#5b5a3e" />
+      <stop offset="0.78" stop-color="#c99752" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0.55" cy="0.68" r="0.45">
+      <stop offset="0" stop-color="#f1cf8c" stop-opacity="0.55" />
+      <stop offset="1" stop-color="#f1cf8c" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8c27f" stop-opacity="0" />
+      <stop offset="1" stop-color="#e8c27f" stop-opacity="0.22" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1440" height="900" fill="url(#sky)" />
+  <rect width="1440" height="900" fill="url(#glow)" />
+
+  <!-- Stars -->
+  <g fill="#f3e6cc">
+    <circle cx="120" cy="80" r="1.4" opacity="0.7" />
+    <circle cx="260" cy="150" r="1" opacity="0.5" />
+    <circle cx="410" cy="60" r="1.6" opacity="0.8" />
+    <circle cx="530" cy="190" r="1" opacity="0.45" />
+    <circle cx="640" cy="110" r="1.2" opacity="0.6" />
+    <circle cx="700" cy="40" r="1" opacity="0.5" />
+    <circle cx="860" cy="170" r="1.3" opacity="0.55" />
+    <circle cx="1210" cy="230" r="1" opacity="0.45" />
+    <circle cx="1350" cy="90" r="1.5" opacity="0.7" />
+    <circle cx="60" cy="260" r="1" opacity="0.4" />
+    <circle cx="330" cy="280" r="1.1" opacity="0.4" />
+    <circle cx="1390" cy="300" r="1" opacity="0.35" />
+    <circle cx="560" cy="300" r="0.9" opacity="0.35" />
+    <circle cx="980" cy="70" r="1" opacity="0.5" />
+  </g>
+  <!-- The Southern Cross -->
+  <g fill="#f3e6cc">
+    <circle cx="860" cy="62" r="3.2" />
+    <circle cx="812" cy="127" r="3" />
+    <circle cx="904" cy="114" r="2.6" />
+    <circle cx="880" cy="152" r="1.7" />
+    <circle cx="852" cy="192" r="3.8" fill="#e9b96a" />
+  </g>
+
+  <!-- Far range, hazy, with snow -->
+  <path d="M0 600 L120 540 L210 575 L330 468 L420 530 L520 492 L640 560 L760 448 L880 520 L990 482 L1100 545 L1220 466 L1340 528 L1440 500 V900 H0 Z" fill="#4f6656" />
+  <g fill="#ece3cf" opacity="0.75">
+    <path d="M330 468 L301 488 L316 485 L329 495 L343 484 L357 488 Z" />
+    <path d="M760 448 L728 470 L745 466 L759 477 L774 465 L790 470 Z" />
+    <path d="M1220 466 L1192 486 L1207 483 L1220 492 L1233 482 L1247 486 Z" />
+  </g>
+  <rect y="460" width="1440" height="200" fill="url(#mist)" />
+
+  <!-- Middle ranges -->
+  <path d="M0 650 L90 610 L200 662 L310 560 L400 622 L470 590 L590 682 L700 600 L800 642 L930 545 L1040 632 L1150 590 L1260 652 L1360 600 L1440 630 V900 H0 Z" fill="#33493d" />
+  <rect y="560" width="1440" height="160" fill="url(#mist)" opacity="0.6" />
+  <path d="M0 722 L140 650 L260 722 L380 668 L500 742 L640 660 L760 732 L880 690 L1010 752 L1130 680 L1270 742 L1440 690 V900 H0 Z" fill="#22362c" />
+
+  <!-- Near ridge with pines -->
+  <path d="M0 800 L180 758 L340 806 L520 770 L700 816 L880 780 L1060 822 L1250 774 L1440 806 V900 H0 Z" fill="#14231c" />
+  <g fill="#14231c">
+    <path d="M160 770 L172 730 L184 770 Z M176 766 L190 716 L204 766 Z M500 782 L511 748 L522 782 Z M516 778 L529 734 L542 778 Z M1230 786 L1242 748 L1254 786 Z M1248 782 L1262 730 L1276 782 Z M1264 788 L1273 760 L1282 788 Z M860 792 L870 760 L880 792 Z" />
+  </g>
+  <rect y="840" width="1440" height="60" fill="#0f1a15" />
+</svg>
